@@ -23,7 +23,6 @@ class _HomeState extends State<Home> {
       ),
       body: bodyHome(),
       bottomNavigationBar: barNavegation(),
-
     );
   }
 }

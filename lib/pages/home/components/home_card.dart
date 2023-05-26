@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/constants/colors.dart';
 
+import '../../selecao__linha/selecao_linhas.dart';
+
+
 class HomeCard extends StatelessWidget {
   const HomeCard({Key? key}) : super(key: key);
 
@@ -50,11 +53,11 @@ class HomeCard extends StatelessWidget {
                 child: SizedBox(
                   height: 18,
                   child: ElevatedButton(
-                    onPressed: (){},
+
                     child: Text(
                         "VER LINHAS",
                       style: TextStyle(
-                        fontSize: 10
+                        fontSize: 12
                       ),
                     ),
                     style: ButtonStyle(
@@ -66,7 +69,12 @@ class HomeCard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(3),
                             )
                         )
-                    ),
+                    ), onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => selecaoLinha())
+                      );
+                  },
                   ),
                 ),
               ),

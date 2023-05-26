@@ -52,11 +52,21 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+#  fonts:
+#    - family: Arimo
+#        - asset: assets/fonts/Arimo-Regular.ttf
+#        - asset: assets/fonts/Arimo-Bold.ttf
+#        - asset: assets/fonts/Arimo-Regular.ttf
+
+
   assets:
     - assets/images/logo.png
     - assets/images/home.png
     - assets/images/metroguia.png
     - assets/images/metro.png
+    - assets/images/logo info.png
+    - assets/images/home info.png
+    - assets/images/check.png
 
 
   # The following line ensures that the Material Icons font is
@@ -78,10 +88,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-#    fonts:
-#     - family: Arimo
-#         - asset: assets/fonts/Arimo-Bold.ttf
-#         - asset: assets/fonts/Arimo-Regular.ttf
+
 
 
   # For details regarding fonts from package dependencies,
