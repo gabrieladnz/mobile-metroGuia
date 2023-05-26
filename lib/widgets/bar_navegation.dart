@@ -3,6 +3,7 @@ import 'package:metroguia/constants/colors.dart';
 import 'package:metroguia/pages/home/components/body_home.dart';
 import 'package:metroguia/pages/home/home.dart';
 import 'package:metroguia/pages/selecao__linha/selecao_linhas.dart';
+import 'package:metroguia/pages/Infomacoes/info.dart';
 
 
 class barNavegation extends StatefulWidget {
@@ -38,6 +39,7 @@ class _barNavegationState extends State<barNavegation> {
         children: [ // Aqui onde vamos colocar as telas para a navegação
           bodyHome(),
           selecaoLinha(),
+          Info(),
         ],
         onPageChanged: setPaginaAtual,
       ),

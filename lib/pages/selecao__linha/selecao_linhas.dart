@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:metroguia/pages/Infomacoes/components/body_info.dart';
-
+import 'package:metroguia/widgets/bar_navegation.dart';
+import 'package:metroguia/pages/selecao__linha/components/body_linha.dart';
 
 class selecaoLinha extends StatelessWidget {
   const selecaoLinha({Key? key}) : super(key: key);
@@ -8,7 +8,7 @@ class selecaoLinha extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BodyInfo(),
+      body: BodyLinha(),
     );
   }
 }

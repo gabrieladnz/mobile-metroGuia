@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'info_header.dart';
-import 'info_menu.dart';
+import 'package:metroguia/pages/selecao__linha/components/linha_header.dart';
 
-class BodyInfo extends StatelessWidget {
-  const BodyInfo({Key? key}) : super(key: key);
+class BodyLinha extends StatelessWidget {
+  const BodyLinha({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +10,7 @@ class BodyInfo extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          InfoHeader(),
-          InfoMenu(),
+          LinhaHeader(),
         ],
       ),
     );
