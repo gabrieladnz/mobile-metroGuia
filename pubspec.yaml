@@ -68,6 +68,9 @@ flutter:
     - assets/images/home info.png
     - assets/images/check.png
     - assets/images/terminal.png
+    - assets/images/linhaCentro.png
+    - assets/images/linhaSul.png
+    - assets/images/linhaVLT.png
 
 
   # The following line ensures that the Material Icons font is
