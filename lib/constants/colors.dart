@@ -16,6 +16,7 @@ const Color icons = Color(0xFF676464);
 const Color orangeDetails = Color(0xFFF29F05);
 const Color orangeNavegation = Color(0xFFF2b705);
 const Color yellowDetails = Color(0xffF2CB05);
+const Color redDetails = Color(0xffE71414);
 const Color blueDetails = Color(0xFF85F2F2);
 
 //Cores das Linhas

@@ -12,7 +12,7 @@ class InfoHeader extends StatelessWidget {
         Image.asset(
           "assets/images/home info.png",
           height: 143,
-          width: 378,
+          width: 420,
           fit: BoxFit.cover,
         ),
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:metroguia/pages/linha__selecionada/mapa_completo/mapa_completo.dart';
 import '../../../constants/colors.dart';
 
 class LinhaMenu extends StatelessWidget {
@@ -56,7 +57,8 @@ class LinhaMenu extends StatelessWidget {
                               Container(
                                 margin: EdgeInsets.only(top: 20),
                                 child: Text(
-                                  'Linha sul',
+                                  'Linha Sul',
+                                  textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.normal,
@@ -75,9 +77,9 @@ class LinhaMenu extends StatelessWidget {
                             children: [
                               Image.asset('assets/images/linhaCentro.png'),
                               Container(
-                                margin: EdgeInsets.only(top: 35),
+                                margin: EdgeInsets.only(top: 35, left: 15),
                                 child: Text(
-                                  'Linha centro',
+                                  'Linha Centro',
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.normal,
@@ -119,7 +121,12 @@ class LinhaMenu extends StatelessWidget {
                   margin: EdgeInsets.only(top: 30),
                   child: ElevatedButton(
                     onPressed: () {
-                      // Ação do botão
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => const MapaCompleto())
+                          )
+                      );// Ação do botão
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),

@@ -71,6 +71,11 @@ flutter:
     - assets/images/linhaCentro.png
     - assets/images/linhaSul.png
     - assets/images/linhaVLT.png
+    - assets/images/MapaLinhasul.png
+    - assets/images/MapaCamaragibe.png
+    - assets/images/MapaJaboatão.png
+    - assets/images/Mapa Completo.png
+
 
 
   # The following line ensures that the Material Icons font is

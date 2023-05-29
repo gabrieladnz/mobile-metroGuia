@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/pages/home/home.dart';
-import 'package:metroguia/pages/selecao__linha/selecao_linhas.dart';
+
 
 void main() {
   runApp(const MyApp());

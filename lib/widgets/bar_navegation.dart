@@ -65,7 +65,7 @@ class _barNavegationState extends State<barNavegation> {
             label: "HOME"
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.directions_subway),
+              icon: Icon(Icons.directions_subway_filled_outlined),
               label: "LINHAS"
           ),
           BottomNavigationBarItem(
