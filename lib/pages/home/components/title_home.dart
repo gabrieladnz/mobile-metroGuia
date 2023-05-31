@@ -24,7 +24,7 @@ class TitleHome extends StatelessWidget {
               Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 13),
+                      padding: const EdgeInsets.only(left: 13),
                       child: Text(
                         "ROTAS FREQUENTES",
                         style: TextStyle(
@@ -35,9 +35,9 @@ class TitleHome extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 15),
+                      padding: const EdgeInsets.only(),
                       child: Text(
-                        "Linhas, estações e linhas de ônibus",
+                        "Linhas e estações do metrô",
                         style: TextStyle(
                             color: textMain,
                             fontSize: 12,
