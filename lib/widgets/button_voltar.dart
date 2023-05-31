@@ -8,29 +8,29 @@ class ButtonVoltar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(right: 320, bottom: 20),
-        child: InkWell(
-          onTap: (){
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: ((context) => const selecaoLinha())
-                )
-            );
-          },
-          child: SizedBox(
-              width: 30,
-              height: 30,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-                child: Icon(
-                  Icons.arrow_back,
-                ),
+      child: InkWell(
+        onTap: (){
+          Navigator.pop(
+              context,
+              MaterialPageRoute(
+                  builder: ((context) => const selecaoLinha())
               )
-          ),
+          );
+        },
+        child: SizedBox(
+            width: 30,
+            height: 30,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30)
+              ),
+              child: Icon(
+                Icons.arrow_back,
+              ),
+            )
         ),
-      );
+      ),
+    );
   }
 }

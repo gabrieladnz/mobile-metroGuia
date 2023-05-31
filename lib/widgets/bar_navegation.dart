@@ -30,7 +30,6 @@ class _barNavegationState extends State<barNavegation> {
    });
  }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/pages/selecao__linha/components/linha_header.dart';
+import '../../../widgets/bar_navegation.dart';
 import 'linha_menu.dart';
 
 class BodyLinha extends StatelessWidget {
