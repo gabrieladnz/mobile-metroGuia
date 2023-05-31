@@ -10,7 +10,7 @@ class ButtonVoltar extends StatelessWidget {
       padding: const EdgeInsets.only(right: 320, bottom: 20),
         child: InkWell(
           onTap: (){
-            Navigator.push(
+            Navigator.pop(
                 context,
                 MaterialPageRoute(
                     builder: ((context) => const selecaoLinha())

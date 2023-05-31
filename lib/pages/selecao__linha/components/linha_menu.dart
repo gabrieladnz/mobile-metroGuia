@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:metroguia/pages/linha__selecionada/linha__centro_jaboatao/linha__jaboatao.dart';
 import 'package:metroguia/pages/linha__selecionada/mapa_completo/mapa_completo.dart';
 import '../../../constants/colors.dart';
+import '../../linha__selecionada/linha__sul/linha_sul.dart';
 
 class LinhaMenu extends StatelessWidget {
   const LinhaMenu({Key? key}) : super(key: key);
@@ -53,7 +55,17 @@ class LinhaMenu extends StatelessWidget {
                           padding: EdgeInsets.only(right: 60),
                           child: Column(
                             children: [
-                              Image.asset('assets/images/linhaSul.png'),
+                              InkWell(
+                                  onTap: (){
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: ((context) => const LinhaSul())
+                                        )
+                                    );
+                                  },
+                                  child: Image.asset('assets/images/linhaSul.png')
+                              ),
                               Container(
                                 margin: EdgeInsets.only(top: 20),
                                 child: Text(
@@ -75,9 +87,22 @@ class LinhaMenu extends StatelessWidget {
                           padding: EdgeInsets.only(right: 50),
                           child: Column(
                             children: [
-                              Image.asset('assets/images/linhaCentro.png'),
+                              InkWell(
+                                  onTap: (){
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: ((context) => const Jaboatao())
+                                        )
+                                    );
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 30),
+                                    child: Image.asset('assets/images/linhaCentro.png'),
+                                  )
+                              ),
                               Container(
-                                margin: EdgeInsets.only(top: 35, left: 15),
+                                margin: EdgeInsets.only(top: 20, left: 15),
                                 child: Text(
                                   'Linha Centro',
                                   style: TextStyle(
