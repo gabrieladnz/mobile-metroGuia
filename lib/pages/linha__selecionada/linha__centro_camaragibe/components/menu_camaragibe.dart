@@ -74,14 +74,16 @@ class MenuCamaragibe extends StatelessWidget {
                                 children: [
                                   ShaderMask(
                                     shaderCallback: (Rect) => LinearGradient(
-                                      colors: [
-                                        redDetails,
-                                        yellowDetails,
-                                        blueLinhaSul,
-                                        greenLinhaVlt
-                                      ],
-                                      begin: Alignment.topLeft,
-                                      end: Alignment.topRight
+                                        colors: [
+                                          redDetails,
+                                          redDetails,
+                                          yellowDetails,
+                                          blueLinhaSul,
+                                          greenLinhaVlt,
+                                          greenLinhaVlt,
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.topRight
                                     ).createShader(Rect),
                                     child: Icon(
                                       color:Colors.white,

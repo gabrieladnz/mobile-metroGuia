@@ -80,9 +80,11 @@ class MenuCabo extends StatelessWidget {
                                     shaderCallback: (Rect) => LinearGradient(
                                         colors: [
                                           redDetails,
+                                          redDetails,
                                           yellowDetails,
                                           blueLinhaSul,
-                                          greenLinhaVlt
+                                          greenLinhaVlt,
+                                          greenLinhaVlt,
                                         ],
                                         begin: Alignment.topLeft,
                                         end: Alignment.topRight
