@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/pages/linha__selecionada/linha__centro_jaboatao/linha__jaboatao.dart';
+import 'package:metroguia/pages/linha__selecionada/linha__vlt_cajueiro_seco/linha__cajueiro_seco.dart';
 import 'package:metroguia/pages/linha__selecionada/mapa_completo/mapa_completo.dart';
 import '../../../constants/colors.dart';
 import '../../linha__selecionada/linha__sul/linha_sul.dart';
@@ -56,16 +57,15 @@ class LinhaMenu extends StatelessWidget {
                           child: Column(
                             children: [
                               InkWell(
-                                  onTap: (){
+                                  onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: ((context) => const LinhaSul())
-                                        )
-                                    );
+                                            builder: ((context) =>
+                                                const LinhaSul())));
                                   },
-                                  child: Image.asset('assets/images/linhaSul.png')
-                              ),
+                                  child: Image.asset(
+                                      'assets/images/linhaSul.png')),
                               Container(
                                 margin: EdgeInsets.only(top: 20),
                                 child: Text(
@@ -88,19 +88,18 @@ class LinhaMenu extends StatelessWidget {
                           child: Column(
                             children: [
                               InkWell(
-                                  onTap: (){
+                                  onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: ((context) => const Jaboatao())
-                                        )
-                                    );
+                                            builder: ((context) =>
+                                                const Jaboatao())));
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.only(top: 30),
-                                    child: Image.asset('assets/images/linhaCentro.png'),
-                                  )
-                              ),
+                                    child: Image.asset(
+                                        'assets/images/linhaCentro.png'),
+                                  )),
                               Container(
                                 margin: EdgeInsets.only(top: 20, left: 15),
                                 child: Text(
@@ -121,7 +120,19 @@ class LinhaMenu extends StatelessWidget {
                           padding: EdgeInsets.only(left: 35),
                           child: Column(
                             children: [
-                              Image.asset('assets/images/linhaVLT.png'),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: ((context) =>
+                                              const CajueiroVLT())));
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 30),
+                                  child: Image.asset('assets/images/linhaVLT.png'),
+                                )
+                              ),
                               Container(
                                 margin: EdgeInsets.only(top: 35),
                                 child: Text(
@@ -141,7 +152,7 @@ class LinhaMenu extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-             // Botão de mostrar mapa
+                // Botão de mostrar mapa
                 Container(
                   margin: EdgeInsets.only(top: 30),
                   child: ElevatedButton(
@@ -149,25 +160,26 @@ class LinhaMenu extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: ((context) => const MapaCompleto())
-                          )
-                      );// Ação do botão
+                              builder: ((context) =>
+                                  const MapaCompleto()))); // Ação do botão
                     },
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.amber),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(7), // Define o raio desejado
+                          borderRadius: BorderRadius.circular(
+                              7), // Define o raio desejado
                         ),
                       ),
                     ),
-                    child: Text('Mostrar mapa completo',
+                    child: Text(
+                      'Mostrar mapa completo',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
                       ),
                     ),
-
                   ),
                 ),
               ],
