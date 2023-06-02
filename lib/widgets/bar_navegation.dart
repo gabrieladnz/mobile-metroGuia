@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/constants/colors.dart';
+import 'package:metroguia/pages/Infomacoes/info.dart';
 import 'package:metroguia/pages/home/components/body_home.dart';
 import 'package:metroguia/pages/home/home.dart';
 import 'package:metroguia/pages/selecao__linha/selecao_linhas.dart';
-import 'package:metroguia/pages/Infomacoes/info.dart';
+import 'package:metroguia/pages/terminal/terminal.dart';
 
 
 class barNavegation extends StatefulWidget {
@@ -30,6 +31,7 @@ class _barNavegationState extends State<barNavegation> {
    });
  }
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +40,8 @@ class _barNavegationState extends State<barNavegation> {
         children: [ // Aqui onde vamos colocar as telas para a navegação
           bodyHome(),
           selecaoLinha(),
-          Info(),
+          Terminal(),
+          Info()
         ],
         onPageChanged: setPaginaAtual,
       ),
@@ -66,6 +69,10 @@ class _barNavegationState extends State<barNavegation> {
           BottomNavigationBarItem(
               icon: Icon(Icons.directions_subway_filled_outlined),
               label: "LINHAS"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.directions_bus_filled_outlined),
+              label: "TERMINAIS"
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.info_outline),
