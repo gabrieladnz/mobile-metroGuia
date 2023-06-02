@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/pages/home/components/fav_routes.dart';
+import 'package:metroguia/pages/home/components/integracao_menu.dart';
 import 'package:metroguia/pages/home/components/search_bar.dart';
 import 'package:metroguia/pages/home/components/title_home.dart';
 import 'package:metroguia/pages/home/components/title_integracao.dart';
@@ -15,7 +16,7 @@ class HomeMenu extends StatelessWidget {
               padding: EdgeInsets.only(top: 100),
               child: Expanded(
                 child: Container(
-                  height: 440,
+                  height: 640,
                   decoration: BoxDecoration(color: menu,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(16),
@@ -41,6 +42,7 @@ class HomeMenu extends StatelessWidget {
                       TitleHome(),
                       FavoritesRotas(),
                       TitleIntegracao(),
+                      IntegracaoMenu()
                     ],
                   ),
                 ),

@@ -38,7 +38,7 @@ class LinhaSulMenu extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(
-                      height: 620,
+                      height: 610,
                         child: Container(
                             margin: EdgeInsets.only(top: 20, left: 8),
                             child: Image.asset("assets/images/MapaLinhasul.png")
@@ -47,7 +47,7 @@ class LinhaSulMenu extends StatelessWidget {
 
                     //Informações dos ícones
                     Container(
-                        margin: EdgeInsets.only(right: 5, bottom: 455),
+                        margin: EdgeInsets.only(right: 2, bottom: 455),
                         child: Column(
                           children: [
                             Padding(

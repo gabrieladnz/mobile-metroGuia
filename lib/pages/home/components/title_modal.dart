@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../../../constants/colors.dart';
 
-class TitleIntegracao extends StatelessWidget {
-  const TitleIntegracao({Key? key}) : super(key: key);
+class TitleModal extends StatelessWidget {
+  const TitleModal({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 20, top: 50),
+      padding: const EdgeInsets.only(left: 20, top: 5),
       child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
