@@ -30,7 +30,7 @@ class DestinoCabo extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pop(
                           context,
                           MaterialPageRoute(
                             builder: (context) => const CajueiroVLT(),

@@ -83,12 +83,10 @@ class JaboataoMenu extends StatelessWidget {
                                           redDetails,
                                           yellowDetails,
                                           blueLinhaSul,
-                                          redDetails,
-                                          yellowDetails,
-                                          blueLinhaSul
+                                          greenLinhaVlt
                                         ],
-                                        begin: Alignment.topRight,
-                                        end: Alignment.bottomRight
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.topRight
                                     ).createShader(Rect),
                                     child: Icon(
                                       color:Colors.white,
