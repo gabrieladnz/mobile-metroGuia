@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:metroguia/pages/home/components/fav_routes.dart';
 import 'package:metroguia/pages/home/components/search_bar.dart';
 import 'package:metroguia/pages/home/components/title_home.dart';
+import 'package:metroguia/pages/home/components/title_integracao.dart';
 import '../../../constants/colors.dart';
 
 class HomeMenu extends StatelessWidget {
@@ -38,7 +39,8 @@ class HomeMenu extends StatelessWidget {
                       ),
                       SearchBar(),
                       TitleHome(),
-                      FavoritesRotas()
+                      FavoritesRotas(),
+                      TitleIntegracao(),
                     ],
                   ),
                 ),
