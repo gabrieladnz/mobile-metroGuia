@@ -71,16 +71,34 @@ class IntegracaoMenu extends StatelessWidget {
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          Text(
-                                            "Os terminais SEI são representados \n"
-                                                "por este símbolo. Indicando que são \n"
-                                                "terminais integrados, incluídos ao metrô.",
-                                            style: TextStyle(
-                                              color: textMain,
-                                              fontSize: 14,
+                                          RichText( //Separando o texto e deixando uma parte em negrito
+                                            text: TextSpan(
+                                                text: "Os ",
+                                                style: TextStyle(
+                                                    color: textMain,
+                                                    fontSize: 14
+                                                ),
+                                                children: <TextSpan> [ // aqui que vai ficar em negrito
+                                                  TextSpan(
+                                                      text: "terminais SEI",
+                                                      style: TextStyle(
+                                                          color: textMain,
+                                                          fontSize: 14,
+                                                          fontWeight: FontWeight.w600
+                                                      )
+                                                  ),
+                                                  TextSpan(
+                                                      text: " são representados\n"
+                                                          "por este símbolo. Indicando que são \n"
+                                                          "terminais integrados, incluídos ao metrô.",
+                                                      style: TextStyle(
+                                                          color: textMain,
+                                                          fontSize: 14
+                                                      )
+                                                  )
+                                                ]
                                             ),
                                           ),
-
                                           ShaderMask(
                                             shaderCallback: (Rect) => LinearGradient(
                                                 colors: [
@@ -120,16 +138,34 @@ class IntegracaoMenu extends StatelessWidget {
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text(
-                                                "As integrações Metrô-Ônibus são\n"
-                                                    "representados por este símbolo. Indicando \n"
-                                                    "que são os ônibus que não entram nos \nterminais SEI.",
-                                                style: TextStyle(
-                                                  color: textMain,
-                                                  fontSize: 14,
-                                                ),
+                                              RichText( //Separando o texto e deixando uma parte em negrito
+                                                  text: TextSpan(
+                                                    text: "As ",
+                                                    style: TextStyle(
+                                                      color: textMain,
+                                                      fontSize: 14
+                                                    ),
+                                                    children: <TextSpan> [ // aqui que vai ficar em negrito
+                                                      TextSpan(
+                                                        text: "integrações Metrô-Ônibus",
+                                                        style: TextStyle(
+                                                          color: textMain,
+                                                          fontSize: 14,
+                                                          fontWeight: FontWeight.w600
+                                                        )
+                                                      ),
+                                                      TextSpan(
+                                                          text: " são\n"
+                                                          "representados por este símbolo. Indicando \n"
+                                                          "que são os ônibus que não entram nos \nterminais SEI.",
+                                                          style: TextStyle(
+                                                              color: textMain,
+                                                              fontSize: 14
+                                                      )
+                                                      )
+                                                    ]
+                                                  ),
                                               ),
-
                                              Icon(
                                                   color: icons,
                                                   Icons.directions_bus_filled_outlined,

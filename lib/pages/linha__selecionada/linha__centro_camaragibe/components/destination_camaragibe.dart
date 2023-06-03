@@ -18,7 +18,7 @@ class DestinoCab extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 15),
                   child: Text(
-                    "Destino",
+                    "Destinos",
                     style: TextStyle(
                         color: titles,
                         fontSize: 25,
@@ -42,6 +42,8 @@ class DestinoCab extends StatelessWidget {
                         "Jaboatão",
                         style: TextStyle(
                             color: titles,
+                            decoration: TextDecoration.underline,
+                            decorationColor: Colors.black,
                             fontSize: 25,
                             fontWeight: FontWeight.w600
                         ),
@@ -50,7 +52,9 @@ class DestinoCab extends StatelessWidget {
                       Text(
                         "Camaragibe",
                         style: TextStyle(
-                            color: orangeNavegation,
+                            color: orangeLinhaCentro,
+                            decoration: TextDecoration.underline,
+                            decorationColor: orangeLinhaCentro,
                             fontSize: 25,
                             fontWeight: FontWeight.w600
                         ),

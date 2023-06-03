@@ -21,7 +21,7 @@ class HomeCard extends StatelessWidget {
               color: Colors.black.withOpacity(0.1),
               spreadRadius: 3,
               blurRadius: 4,
-              offset: Offset(0, 2) // muda a posição da sombra
+              offset: const Offset(0, 2) // muda a posição da sombra
           ),
         ],
       ),
@@ -35,7 +35,7 @@ class HomeCard extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Align(
+              const Align(
                 alignment: Alignment.center,
                 child: Text(
                   "Acompanhe a rotas das linhas \n e estações do metrô \n de Recife",
@@ -47,40 +47,41 @@ class HomeCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 65
                 ),
 
-                child: Container(
+                //Button
+                child: SizedBox(
                   height: 18,
-                  child: ElevatedButton(
-                    onPressed: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder:
-                          ((context) => selecaoLinha())
-                          )
-                      );
-                    },
-                    style: ButtonStyle(
-                      elevation: MaterialStateProperty.all(0),
-                        foregroundColor: MaterialStateProperty.all(Colors.black),
-                        backgroundColor:MaterialStateProperty.all(blueDetails),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                            RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(3),
+                    child: ElevatedButton(
+                      onPressed: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder:
+                            ((context) => const selecaoLinha())
                             )
-                        )
-                    ),
+                        );
+                      },
+                      style: ButtonStyle(
+                        elevation: MaterialStateProperty.all(0),
+                          foregroundColor: MaterialStateProperty.all(Colors.black),
+                          backgroundColor:MaterialStateProperty.all(blueDetails),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(3),
+                              )
+                          )
+                      ),
 
-                    child: Text(
-                      "VER LINHAS",
-                      style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w600
+                      child: const Text(
+                        "VER LINHAS",
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600
+                        ),
                       ),
                     ),
-                  ),
                 ),
               ),
             ],
