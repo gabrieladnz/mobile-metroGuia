@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_afogados/ti_afogados.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_santa_luzia/Santa%20Luzia.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Werneck/werneck.dart';
 
 import '../../../../constants/colors.dart';
 
@@ -17,7 +20,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: (){
-
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => Afogados())
+                        )
+                    );
                   },
                   child: SizedBox(
                     height: 120,
@@ -112,7 +120,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => SantaLuzia())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
@@ -185,7 +198,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Werneck())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
