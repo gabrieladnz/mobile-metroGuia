@@ -56,8 +56,6 @@ class DestinoCajueiro extends StatelessWidget {
                         "Cabo",
                         style: TextStyle(
                             color: titles,
-                            decoration: TextDecoration.underline,
-                            decorationColor: Colors.black,
                             fontSize: 25,
                             fontWeight: FontWeight.w600
                         ),

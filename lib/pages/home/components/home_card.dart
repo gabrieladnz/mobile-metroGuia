@@ -56,12 +56,12 @@ class HomeCard extends StatelessWidget {
                   height: 18,
                     child: ElevatedButton(
                       onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder:
-                            ((context) => const selecaoLinha())
-                            )
-                        );
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder:
+                              ((context) => const selecaoLinha())
+                              )
+                          );
                       },
                       style: ButtonStyle(
                         elevation: MaterialStateProperty.all(0),

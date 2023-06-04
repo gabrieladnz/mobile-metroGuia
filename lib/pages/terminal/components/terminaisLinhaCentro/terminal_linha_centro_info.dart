@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_afogados/ti_afogados.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_cosme_damiao/cosme_damiao.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_santa_luzia/Santa%20Luzia.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Werneck/werneck.dart';
 
@@ -590,6 +591,99 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                     ),
                   ),
                 ),
+
+                //T.I. Cosme e Damião
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: InkWell(
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => const CosmeDamiao())
+                          )
+                      );
+                    },
+                    child: SizedBox(
+                      height: 120,
+                      width: 234,
+                      child: Container(
+                        decoration:
+                        BoxDecoration(
+                            borderRadius: BorderRadius.circular(2),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  spreadRadius: 2,
+                                  blurRadius: 5.0,
+                                  offset: Offset(2.0, 2.0)
+                              )
+                            ]),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                                  child: Icon(
+                                      Icons.directions_subway_outlined,
+                                      color: icons,
+                                      size: 40
+                                  ),
+                                ),
+                                Text(
+                                  "Estação Cosme e Damião",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 15
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+                                  child: ShaderMask(
+                                    shaderCallback: (Rect) => LinearGradient(
+                                        colors: [
+                                          redDetails,
+                                          redDetails,
+                                          yellowDetails,
+                                          blueLinhaSul,
+                                          greenLinhaVlt,
+                                          greenLinhaVlt,
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.topRight
+                                    ).createShader(Rect),
+                                    child: Icon(
+                                      Icons.directions_bus_outlined,
+                                      color:Colors.white,
+                                      size: 35,
+                                    ),
+                                  ),
+                                ),
+                                Text(
+                                  "T.I. Cosme e Damião",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 15
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
 
                 //T.I. Jaboatão
                 Padding(
