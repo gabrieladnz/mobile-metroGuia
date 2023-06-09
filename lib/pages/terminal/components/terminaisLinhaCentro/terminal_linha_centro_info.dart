@@ -10,6 +10,7 @@ import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Werneck
 
 import '../../../../constants/colors.dart';
 import 'TI_TIP/tip.dart';
+import 'TI_camaragibe/camaragibe.dart';
 
 class TerminalLinhaCentroInfo extends StatelessWidget {
   const TerminalLinhaCentroInfo({Key? key}) : super(key: key);
@@ -821,7 +822,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Camaragibe())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
