@@ -5,4 +5,10 @@ O MetrôGuia é um aplicativo mobile, seu objetivo é auxiliar seus usuários a 
 O MetrôGuia funcionará como um guia de fácil acesso para as pessoas que utilizam o metrô. Disponibilizando a visualização das linhas de forma individual e também a opção do mapa completo, visualização das estações que possuem terminais integrado e as linhas de ônibus que passam nas integrações do metrô.
 
 # Técninas e Tecnologia utilizadas
-* oi
+* IDE's utilizadas na progrmação foram o Android Studio e Vscode
+* Utilização da Framework do Flutter SDK e o Android SDK
+* Uso do Flutter Geolocator Plugin para ter acesso a geolocalização do usuário
+* Utilização do Flutter Native Splash para termos uma tela de carregamento assim que o aplicativo for iniciado
+* Flutter Launcher Icons para adicionar o ícone do nosso aplicativo
+* Uso do Console Google Cloud para utilização da Directions API e Maps SDK em nossas futuras atualizações 
+
