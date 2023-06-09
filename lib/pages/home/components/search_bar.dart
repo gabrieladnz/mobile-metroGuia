@@ -49,9 +49,9 @@ class SearchBar extends StatelessWidget {
               hintText: "Pesquise o seu destino",
               hintStyle: TextStyle(
                   color: textMain,
-                  fontSize: 12,
+                  fontSize: 16,
                   fontWeight: FontWeight.w700,
-                  letterSpacing: -0.4
+                  letterSpacing: -1
               )
           ),
         ),
