@@ -518,7 +518,7 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                                     ).createShader(Rect),
                                     child: Icon(
                                       Icons.directions_bus_outlined,
-                                      color: icons,
+                                      color: Colors.white,
                                       size: 35,
                                     ),
                                   ),
