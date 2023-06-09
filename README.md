@@ -2,4 +2,7 @@
 # MetrôGuia
 O MetrôGuia é um aplicativo mobile, seu objetivo é auxiliar seus usuários a navegarem pelo metrô de forma simples e descomplicada. Através de um design focado no usuário, permitindo a visualização de linhas e estações, o usuário pode identificar seu percurso e pontos de interesse por meio de uma plataforma intuitiva e com navegação fluida.
 # Funcionalidades do Aplicativo
-O MetrôGuia funcionará como um guia de fácil acesso para as pessoas que utilizam o metrô. Disponibilizando a visualização das linhas de forma individual e também a opção do mapa completo, visualização das estações que possuem terminais integrado e as linhas de ônibus que passam nas integrações do metrô.  
+O MetrôGuia funcionará como um guia de fácil acesso para as pessoas que utilizam o metrô. Disponibilizando a visualização das linhas de forma individual e também a opção do mapa completo, visualização das estações que possuem terminais integrado e as linhas de ônibus que passam nas integrações do metrô.
+
+# Técninas e Tecnologia utilizadas
+* oi
