@@ -3,6 +3,7 @@ import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_afog
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_barro/barro.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_cavaleiro/cavaleiro.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_cosme_damiao/cosme_damiao.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_jaboatao/jaboatao.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_santa_luzia/Santa%20Luzia.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Tejipio/tejipio.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Werneck/werneck.dart';
@@ -728,7 +729,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Jaboatao())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
