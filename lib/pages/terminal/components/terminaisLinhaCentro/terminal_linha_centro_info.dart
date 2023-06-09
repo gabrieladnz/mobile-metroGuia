@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_afogados/ti_afogados.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_barro/barro.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_cavaleiro/cavaleiro.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_cosme_damiao/cosme_damiao.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/TI_santa_luzia/Santa%20Luzia.dart';
+import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Tejipio/tejipio.dart';
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Werneck/werneck.dart';
 
 import '../../../../constants/colors.dart';
@@ -277,7 +280,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => Barro())
+                            )
+                        );
                     },
                     child: SizedBox(
                       height: 120,
@@ -364,7 +372,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Tejipio())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
@@ -437,7 +450,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Cavaleiro())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
