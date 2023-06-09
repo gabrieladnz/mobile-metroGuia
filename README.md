@@ -7,7 +7,7 @@ O MetrôGuia funcionará como um guia de fácil acesso para as pessoas que utili
 ![WhatsApp Image 2023-06-09 at 20 12 42](https://github.com/flaviohfsilva/Metro-Guia/assets/114579988/5b6f467d-63cf-47d9-91da-358862ae7de7)
 
 # Técninas e Tecnologia utilizadas
-* IDE's utilizadas na progrmação foram o Android Studio e Vscode
+* IDE's utilizadas no desenvolvimento foram o Android Studio e Vscode
 * Utilização da Framework do Flutter SDK e o Android SDK
 * Uso do Flutter Geolocator Plugin para ter acesso a geolocalização do usuário
 * Utilização do Flutter Native Splash para termos uma tela de carregamento assim que o aplicativo for iniciado
