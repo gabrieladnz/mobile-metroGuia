@@ -8,6 +8,7 @@ import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Tejipio
 import 'package:metroguia/pages/terminal/components/terminaisLinhaCentro/Werneck/werneck.dart';
 
 import '../../../../constants/colors.dart';
+import 'TI_TIP/tip.dart';
 
 class TerminalLinhaCentroInfo extends StatelessWidget {
   const TerminalLinhaCentroInfo({Key? key}) : super(key: key);
@@ -542,7 +543,12 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20),
                   child: InkWell(
                     onTap: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => TIP())
+                          )
+                      );
                     },
                     child: SizedBox(
                       height: 120,
@@ -587,10 +593,24 @@ class TerminalLinhaCentroInfo extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-                                  child: Icon(
-                                    Icons.directions_bus_outlined,
-                                    color: icons,
-                                    size: 35,
+                                  child: ShaderMask(
+                                    shaderCallback: (Rect) => LinearGradient(
+                                        colors: [
+                                          redDetails,
+                                          redDetails,
+                                          yellowDetails,
+                                          blueLinhaSul,
+                                          greenLinhaVlt,
+                                          greenLinhaVlt,
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.topRight
+                                    ).createShader(Rect),
+                                    child: Icon(
+                                      Icons.directions_bus_outlined,
+                                      color:Colors.white,
+                                      size: 35,
+                                    ),
                                   ),
                                 ),
                                 Text(
